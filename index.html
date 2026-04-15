@@ -189,9 +189,22 @@
     #about { background: var(--cream); }
     .about-grid {
       display: grid;
-      grid-template-columns: 1fr 1.6fr;
-      gap: 5rem;
+      grid-template-columns: 1fr 1.4fr 0.7fr;
+      gap: 4rem;
       align-items: start;
+    }
+    .about-portrait {
+      position: sticky;
+      top: 8rem;
+    }
+    .about-portrait figure {
+      margin: 0;
+      line-height: 0;
+    }
+    .about-portrait img {
+      width: 100%;
+      display: block;
+      mix-blend-mode: multiply;
     }
     .section-label {
       font-size: 0.75rem;
@@ -490,6 +503,7 @@
       section { padding: 5rem 1.5rem; }
       footer { padding: 2rem 1.5rem; }
       .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-portrait { display: none; }
       .about-stats { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
       .work-item { grid-template-columns: 1fr; gap: 0.75rem; }
       .work-item:hover { margin: 0; padding: 2.5rem 0; }
@@ -568,6 +582,11 @@
               <div class="stat-label">Meaningful professional connections</div>
             </div>
           </div>
+        </div>
+        <div class="about-portrait reveal reveal-delay-2">
+          <figure>
+            <img src="headshot.png" alt="Ollie Browes" />
+          </figure>
         </div>
       </div>
     </div>
